@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Common NFT</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <style>
     body {
       background-color: #f5f5f5;
     }
 
     .wrap {
-      max-width: 974px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 60px 60px
     }
@@ -28,7 +28,7 @@
       margin: 40px 44px;
       padding-left: 10px;
       border-left: 4px solid #4e4d93;
-      font-family: Satoshi;
+      /* font-family: Satoshi; */
       font-size: 36px;
       font-weight: 400;
       line-height: 49px;
@@ -75,16 +75,10 @@
 
     .ui_table thead tr th {
       padding: 6px 10px;
-      font-family: Satoshi;
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       text-align: left
-    }
-
-    .ui_table thead tr th:nth-child(3),
-    .ui_table thead tr th:last-child {
-      text-align: center
     }
 
     .ui_table tbody tr {
@@ -101,15 +95,6 @@
 
     .ui_table .table__line td {
       border-bottom: 1px solid #4e4d93
-    }
-
-    .ui_table tbody tr td:nth-child(2) {
-      text-align: left
-    }
-
-    .ui_table tbody tr td:nth-child(3),
-    .ui_table tbody tr td:nth-child(4) {
-      text-align: center
     }
 
     .ui_buttonmd,
@@ -206,7 +191,7 @@
 
 <body>
   <div class="wrap">
-    <h1 class="ui_heading">Common</h1>
+    <h1 class="ui_heading">Common NFT</h1>
     <!-- [D] Colors -->
     <section class="ui_section">
       <h2 class="ui_title">Colors</h2>
@@ -323,96 +308,112 @@
     <section class="ui_section">
       <h2 class="ui_title">Typography</h2>
       <div class="ui_content ui_typography">
-        <table class="ui_table">
-          <colgroup>
-            <col style="width: 49.004%">
-            <col style="width: 15.537%">
-            <col style="width: 14.143%">
-            <col style="width: 21.414%">
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Sample</th>
-              <th scope="col">Style</th>
-              <th scope="col">Size</th>
-              <th scope="col">Line height</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <h1 class="heading_one">This is some text</h1>
-              </td>
-              <td>Headline one</td>
-              <td>36pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <h2 class="heading_two">This is some text</h2>
-              </td>
-              <td>Headline two</td>
-              <td>32pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <h3 class="heading_three">This is some text</h3>
-              </td>
-              <td>Headline three</td>
-              <td>24pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <h4 class="heading_four">This is some text</h4>
-              </td>
-              <td>Headline four</td>
-              <td>20pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <h5 class="heading_five">This is some text</h5>
-              </td>
-              <td>Headline five</td>
-              <td>16pt</td>
-              <td>150%</td>
-            </tr>
-            <tr class="table__line">
-              <td>
-                <h6 class="heading_six">This is some text</h6>
-              </td>
-              <td>Headline six</td>
-              <td>14pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <p class="body_sm">This is small body text</p>
-              </td>
-              <td>Body small</td>
-              <td>14pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <p class="body_md">This is medium body text</p>
-              </td>
-              <td>Body medium</td>
-              <td>16pt</td>
-              <td>150%</td>
-            </tr>
-            <tr>
-              <td>
-                <p class="body_lg">This is large body text</p>
-              </td>
-              <td>Body large</td>
-              <td>18pt</td>
-              <td>150%</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="ui_item">
+          <h3 class="ui_item_title">&#35; WorkSans Font</h3>
+          <table class="ui_table">
+            <colgroup>
+              <col style="width: 25%">
+              <col style="width: 25%">
+              <col style="width: 12.5%">
+              <col style="width: 12.5%">
+              <col style="width: 12.5%">
+              <col style="width: 12.5%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Role</th>
+                <th scope="col">Size</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Line height</th>
+                <th scope="col">Spacing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h1 class="heading_one">Headline</h1>
+                </td>
+                <td>heading_one</td>
+                <td>67</td>
+                <td>bold</td>
+                <td>74</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 class="heading_two">Headline</h2>
+                </td>
+                <td>heading_two</td>
+                <td>51</td>
+                <td>bold</td>
+                <td>56</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 class="heading_three">Headline</h3>
+                </td>
+                <td>heading_three</td>
+                <td>38</td>
+                <td>bold</td>
+                <td>46</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4 class="heading_four">Headline</h4>
+                </td>
+                <td>heading_four</td>
+                <td>28</td>
+                <td>bold</td>
+                <td>39</td>
+                <td>0</td>
+              </tr>
+              <tr class="table__line">
+                <td>
+                  <h5 class="heading_five">Headline</h5>
+                </td>
+                <td>Headline five</td>
+                <td>22</td>
+                <td>bold</td>
+                <td>31</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="body_caption">This is small body text</p>
+                </td>
+                <td>body_caption</td>
+                <td>12</td>
+                <td>regular</td>
+                <td>13</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="body_base">This is small body text</p>
+                </td>
+                <td>body_base</td>
+                <td>16</td>
+                <td>regular</td>
+                <td>22</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="body_text">This is small body text</p>
+                </td>
+                <td>body_text</td>
+                <td>22</td>
+                <td>regular</td>
+                <td>35</td>
+                <td>0</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
     <!--// [D] Typography -->

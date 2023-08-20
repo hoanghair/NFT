@@ -39,7 +39,6 @@ figure,
 main {
   margin: 0;
   padding: 0;
-  font-family: ClashDisplay;
 }
 
 html,
@@ -54,7 +53,7 @@ input,
 select,
 textarea,
 button {
-  font-family: Satoshi;
+  font-family: WorkSans;
 }
 
 ul,
@@ -106,17 +105,31 @@ legend {
 }
 
 @font-face {
-  font-family: "ClashDisplay";
+  font-family: "SpaceMono";
   font-weight: 400;
   font-style: normal;
-  src: url(/font/ClashDisplay-Regular.woff) format("woff");
+  src: url(/font/SpaceMono-Regular.woff) format("woff");
 }
 
 @font-face {
-  font-family: "Satoshi";
+  font-family: "SpaceMono";
+  font-weight: 700;
+  font-style: normal;
+  src: url(/font/SpaceMono-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "WorkSans";
   font-weight: 400;
   font-style: normal;
-  src: url(/font/Satoshi-Regular.woff) format("woff");
+  src: url(/font/WorkSans-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 600;
+  font-style: normal;
+  src: url(/font/WorkSans-SemiBold.woff) format("woff");
 }
 
 :root {
@@ -128,11 +141,56 @@ legend {
   --bg_btn_violet: #a259ff;
   --blue_accent: #377df7;
   --red_accent: #ff7262;
-  --gradient_white_violet: linear-gradient(
-    180deg,
-    rgba(162, 89, 255, 0) 0%,
-    #a259ff 100%
-  );
+  --gradient_white_violet: linear-gradient(180deg,
+      rgba(162, 89, 255, 0) 0%,
+      #a259ff 100%);
 
   --gradient_violet_red: ;
 }
+
+@mixin custom-font($fontsize, $fontweight, $lineheight) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  line-height: $lineheight;
+}
+
+
+/* <!-- [D] Typography --> */
+.heading {
+  &_one {
+    @include custom-font(67px, 600, 74px);
+  }
+
+  &_two {
+    @include custom-font(51px, 600, 56px);
+  }
+
+  &_three {
+    @include custom-font(38px, 600, 46px);
+  }
+
+  &_four {
+    @include custom-font(28px, 600, 39px);
+  }
+
+  &_five {
+    @include custom-font(22px, 600, 31px);
+  }
+
+}
+
+.body {
+  &_caption {
+    @include custom-font(12px, 400, 13px);
+  }
+
+  &_base {
+    @include custom-font(16px, 400, 22px);
+  }
+
+  &_text {
+    @include custom-font(22px, 400, 35px);
+  }
+}
+
+/* <!--// [D] Typography --> */
