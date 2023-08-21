@@ -141,6 +141,16 @@ legend {
       rgba(162, 89, 255, 0) 0%,
       #a259ff 100%);
   --gradient_violet_red: ;
+  --border_radius_20: 20px;
+}
+
+.theme_spacemono h1,
+.theme_spacemono h2,
+.theme_spacemono h3,
+.theme_spacemono h4,
+.theme_spacemono h5,
+.theme_spacemono p {
+  font-family: SpaceMono;
 }
 
 /* <!-- [D] Typography --> */
@@ -187,3 +197,44 @@ legend {
 }
 
 /* <!--// [D] Typography --> */
+/* <!-- [D] Button --> */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--border_radius_20);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--white);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.btn.is_disabled {
+  opacity: 50%;
+  pointer-events: none;
+}
+.btn_md {
+  padding: 0 50px;
+}
+.btn_sm {
+  padding: 0 30px;
+}
+
+/* <!--// [D] White --> */
+/* <!-- [D] Secondary --> */
+.btn_secondary {
+  height: 60px;
+  background-color: var(--bg_btn_violet);
+}
+/* <!--// [D] Secondary --> */
+/* <!-- [D] Primary --> */
+/* <!--// [D] Primary --> */
+/* <!-- [D] Opaque --> */
+/* <!--// [D] Opaque --> */
+/* <!-- [D] Ghost --> */
+/* <!--// [D] Ghost --> */
+/* <!--// [D] Button--> */

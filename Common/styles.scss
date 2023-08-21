@@ -56,6 +56,8 @@ button {
   font-family: WorkSans;
 }
 
+
+
 ul,
 ol {
   list-style: none;
@@ -146,6 +148,7 @@ legend {
       #a259ff 100%);
 
   --gradient_violet_red: ;
+  --border_radius_20: 20px;
 }
 
 @mixin custom-font($fontsize, $fontweight, $lineheight) {
@@ -154,6 +157,17 @@ legend {
   line-height: $lineheight;
 }
 
+.theme_spacemono {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    font-family: SpaceMono;
+  }
+}
 
 /* <!-- [D] Typography --> */
 .heading {
@@ -194,3 +208,114 @@ legend {
 }
 
 /* <!--// [D] Typography --> */
+
+/* <!-- [D] Button --> */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--border_radius_20);
+
+  @include custom-font(16px, 600, 22px);
+  
+  color: var(--white);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+  user-select: none;
+
+  &.is_disabled {
+    opacity: 50%;
+    pointer-events: none;
+  }
+
+  &_md {
+    padding: 0 50px;
+  }
+
+  &_sm {
+    padding: 0 30px;
+  }
+}
+
+// .ico {
+//   display: inline-block;
+//   @include custom-dimensions(16px, 16px);
+
+//   margin-left: 12px;
+
+//   &_downwhite {
+//     background: url(/img/ico_down1.png) center no-repeat;
+//   }
+
+//   &_downdark {
+//     background: url(/img/ico_down2.png) center no-repeat;
+//   }
+// }
+
+/* <!--// [D] White --> */
+
+/* <!-- [D] Secondary --> */
+.btn_secondary {
+  height: 60px;
+ 
+  background-color: var(--bg_btn_violet);
+  &:hover {
+    // background-color: var(--border_gray);
+
+  }
+
+  &:focus {
+    // border: $border-primary;
+  }
+}
+
+/* <!--// [D] Secondary --> */
+
+/* <!-- [D] Primary --> */
+// .btn_primary {
+//   background-color: var(--dark_primary);
+//   color: var(--white);
+
+//   &:hover {
+//     background-color: var(--dark_primary_hover);
+//   }
+
+//   &:focus {
+//     border: $border-primary;
+//   }
+// }
+
+/* <!--// [D] Primary --> */
+
+/* <!-- [D] Opaque --> */
+// .btn_opaque {
+//   background-color: var(--bg_dark);
+//   color: var(--white);
+
+//   &:hover {
+//     background: var(--bg_dark_hover);
+//   }
+
+//   &:focus {
+//     border: $border-primary;
+//   }
+// }
+
+/* <!--// [D] Opaque --> */
+
+/* <!-- [D] Ghost --> */
+// .btn_ghost {
+//   background-color: transparent;
+//   color: var(--dark_primary);
+
+//   &:hover {
+//     background: var(--border_gray);
+//   }
+
+//   &:focus {
+//     border: $border-primary;
+//   }
+// }
+
+/* <!--// [D] Ghost --> */
+/* <!--// [D] Button--> */
